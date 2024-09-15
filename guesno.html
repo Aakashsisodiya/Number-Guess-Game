@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessnnumber</title>
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .wrapper{
+            background-color: #212121e9;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+        form{
+            padding: 10px;
+            line-height: 30px;
+            background-color: wheat;
+            color: black;
+            border-radius: 8px;
+        }
+        .guessfield{
+            outline: none;
+            padding: 8px;
+            border-radius: 8px;
+            border: none;
+            width: 100vh;
+            font-size: 15px;
+        }
+        .guesssubmit{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            width: 200px;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+        .guesses{
+            font-size: 20px;
+            font-weight: large;
+        }
+        .result{
+            font-size: 20px;
+            font-weight: large;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Number Guess Name</h1>
+        <p>Try and guess a number between 1 to 100</p>
+        <p>You have 10 attempts to guess the number</p><br>
+        <form class="form">
+            <label>Type a number</label><br>
+            <input type="text" class="guessfield" placeholder=" Pleas Enter a Number Between 1 To 100" id="guessfield"><br>
+            <input type="submit" class="guesssubmit" id="guesssubmit" value="Submit"><br>
+        </form>
+        <div class="result">
+            <p>previous Guess : <span class="guesses"></span></p>
+            <p>Guess Remaning<span class="last-result">10</span></p>
+            <p class="loOrHi"></p>
+        </div>
+    </div>
+    <script src="guesno.js"></script>
+</body>
+</html>
